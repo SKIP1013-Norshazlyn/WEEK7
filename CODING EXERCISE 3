@@ -1,0 +1,40 @@
+package Exercise;
+
+public class Example3 {
+
+	public static void main(String[] args) 
+	{
+		//declare dua variable x =0, y=1. 
+		//Selagi y lebih kecil dan sama dgn 10, 
+		//tambah x dgn y.
+		//kemudian tambah y dgn 5. print x.
+		int x = 0;
+		int y = 1;
+		int i = 1;
+		
+		while( y <= 20)
+		{
+			System.out.println("y = " +y);
+			x = y + x;
+			y = y + 5;
+			System.out.println("x = " +x);
+			System.out.println("i = " +i);
+			i++;
+		}
+		
+		do
+		{
+			System.out.println("y = " +y);
+			x = y + x;
+			y = y + 5;
+			System.out.println("x = " +x);
+			System.out.println("i = " +i);
+			i++;
+		}while( y <= 20);
+			
+		
+			
+
+	}
+
+}
