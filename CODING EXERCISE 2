@@ -1,0 +1,28 @@
+package Exercise;
+
+public class Example2 {
+
+	public static void main(String[] args) 
+	{
+		int k = 20;
+		int i = 20;
+		int j;
+		
+		while (k > 10) 
+		{
+	        System.out.println("k = " +k);
+	        k--; 
+	    }
+		do 
+		{
+			System.out.println("i = " +i);
+			i = i - 1;
+		}
+		while( i > 10);
+		
+		for( j = 20; j > 10; j = j - 1)
+			System.out.println("j = " +j);
+
+	}
+
+}
