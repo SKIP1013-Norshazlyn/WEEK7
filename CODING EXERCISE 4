@@ -1,0 +1,33 @@
+package Exercise;
+import java.util.Scanner;
+public class Example4 {
+
+	public static void main(String[] args) 
+	{
+		int number = (int)(Math.random() * 11);
+		int i;
+		int j = -1;
+		Scanner in = new Scanner(System.in);
+		System.out.println(" Ini adalah sistem meneka nombor");
+		
+		while( j != number)
+		{
+			System.out.println("Masukkan number antara 1 - 10");
+			i = in.nextInt();
+			if ( i == number)
+			{
+				System.out.println("Taniah!! Nombor anda betul");
+			}
+			else if ( i <= number)
+			{
+				System.out.println("Maaf!! Nombor anda terlalu rendah");
+			}
+			else
+				System.out.println("Maaf!! Nombor anda terlalu besar");
+		}
+		
+		
+
+	}
+
+}
