@@ -1,0 +1,46 @@
+package Exercise;
+import java.util.Scanner;
+public class password {
+
+	public static void main(String[] args) 
+	{
+		Scanner in = new Scanner(System.in);
+		
+		String pass;
+		char ch;
+		
+		System.out.print("Enter your password 8 digit with combination of letters and numbers: ");
+		pass = in.nextLine();
+		
+		if ( pass.length() >= 8)
+		{
+			for (int i = 0; i <= 9; i++) 
+			{
+				String str1 = Integer.toString(i); 
+                if (pass.contains(str1)) 
+                { 
+                   int count = 1;
+                }
+			}
+			for (int i = 65; i <= 90; i++) 
+			{ 
+                char c = (char)i; 
+                String str1 = Character.toString(c); 
+
+                if (pass.contains(str1)) 
+                { 
+                    int count = 1; 
+                }
+			}
+			System.out.print("Your password pass");
+			
+		}
+			else
+			{
+				System.out.print("Enter your password again: ");
+		        pass = in.nextLine();
+			}
+		}
+
+	}
+
